@@ -1,0 +1,29 @@
+.background {
+  background-color: #4b87b9;
+  padding: 60px 100px 25px 100px;
+  color: white;
+  font-size: 14px;
+  min-height: 430px;
+}
+
+.super-footer {
+  border-bottom: 1px solid white;
+}
+
+.super-left {
+  border-right: 1px solid white;
+  padding: 60px 40px 30px 40px;
+}
+
+.super-right {
+  padding: 60px 40px 30px 100px;
+}
+
+.sub-footer {
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

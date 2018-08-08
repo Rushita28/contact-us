@@ -1,0 +1,50 @@
+.background {
+  font-family: "Open Sans", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-weight: bolder;
+  min-height: 80px;
+  background-color: #f2f2f2;
+}
+
+.nav-row {
+  padding-top: 15px;
+}
+
+.toplink {
+  margin: 0 20px 0 0;
+}
+
+.toplink > a {
+  color: black;
+  font-size: 14px;
+}
+
+.login-box {
+  display: table;
+}
+
+.links {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.links > a {
+  text-decoration: none;
+  color: #305be6;
+  font-size: 11px;
+}
+
+.nav-item {
+  color: #323232 !important;
+}
+
+#registerButton {
+  color: white;
+  background-color: #6ec06c;
+  text-align: center;
+  padding: 7px 32px;
+  text-decoration: none;
+  border: none;
+  font-size: 13px;
+  display: inline-block;
+}

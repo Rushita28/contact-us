@@ -1,0 +1,37 @@
+#emailBox {
+  width: 80%;
+  background-color: #4b87b9;
+  text-decoration: none;
+  color: white;
+  border: 1px white solid;
+  padding: 5px;
+  display: block;
+}
+
+input.ng-invalid.ng-dirty {
+  border: 1px #a12b32 solid !important;
+}
+
+input.ng-valid {
+  border: 1px #008000 solid !important;
+}
+
+#submitButton {
+  text-decoration: none;
+  border: none;
+  padding: 5px 25px 5px 25px;
+  margin: 8px 0 0 0;
+  color: #4b87b9;
+  font-size: 12px;
+  background-color: white;
+  font-weight: bold;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d9d9d9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d9d9d9;
+}

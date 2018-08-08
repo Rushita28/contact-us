@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div [hidden]="submitted">
+    <input id="emailBox" type="email" required [pattern]="emailPattern" [(ngModel)]="email" placeholder="    Email" #emailInput="ngModel">
+    <button id="submitButton" (click)="onSubmit()" type="submit">SUBMIT</button>
+  </div>
+  <div [hidden]="!submitted">
+    Thank you.
+  </div>
+</div>
