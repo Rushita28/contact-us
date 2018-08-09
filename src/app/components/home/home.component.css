@@ -11,7 +11,7 @@
 }
 
 .col{
-	color: white;	
+	color: white;
 }
 
 h1{
@@ -31,7 +31,7 @@ h1{
 	color: white;
 	border-radius: 0;
 	width: 12vw;
-	
+
 }
 
 .btn:hover{
@@ -45,7 +45,7 @@ h1{
 }
 
 .getStarted{
-	position: absolute; 
+	position: absolute;
 	bottom: 0;
 	top:84%;
 	background: linear-gradient(to right, #6ec16d , #025ba7 );;
