@@ -126,3 +126,10 @@
   border: none;
   display: inline-block;
 }
+
+#registerButton:hover{
+  border: 2px solid #6ec16d;
+  background-color: white;
+  color: #6ec16d;
+  box-shadow: 5px #e5e5e5;
+}

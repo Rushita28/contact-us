@@ -1,9 +1,9 @@
 <div class="container-fluid background">
-  <div class="row nav-row">
+  <div class="row nav-row justify-content-between">
     <div class="col-2">
-      <img src="../../../assets/MasonSDBC logo.png" style="padding-left: 40px">
+      <a href="/home"><img src="../../../assets/MasonSDBC logo.png" style="padding-left: 40px"></a>
     </div>
-    <div class="col-8 topnav d-flex justify-content-center align-self-center" id="topNav">
+    <div class="col-auto topnav d-flex justify-content-center align-self-center" id="topNav">
         <div class="dropdown">
           <button class="dropbtn">ABOUT US
             <fa name="caret-down"></fa>
@@ -18,7 +18,7 @@
         <a routerLink="services">SERVICES</a>
         <a routerLink="resources">RESOURCES</a>
         <a routerLink="contactUs">CONTACT US</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">&#9776;</a>
     </div>
     <div class="col-2 login-box text-center align-self-center">
       <button id="registerButton" type="button">REGISTER</button>

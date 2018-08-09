@@ -12,4 +12,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleResponsive() {
+    const x = document.getElementById('topNav');
+    if (x.className === 'col-auto topnav d-flex justify-content-center align-self-center') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'col-auto topnav d-flex justify-content-center align-self-center';
+    }
+  }
 }
