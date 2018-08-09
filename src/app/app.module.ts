@@ -13,14 +13,16 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import {FormsModule} from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'services',      component: ServicesComponent },
   { path: 'resources',      component: ResourcesComponent },
   { path: 'contactUs',      component: ContactUsComponent },
   { path: '',
-    redirectTo: '/aboutUs',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
     ResourcesComponent,
     ContactUsComponent,
     PageNotFoundComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(
