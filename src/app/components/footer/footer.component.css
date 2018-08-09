@@ -12,11 +12,11 @@
 
 .super-left {
   border-right: 1px solid white;
-  padding: 60px 40px 30px 40px;
+  padding: 60px 40px 30px 30px;
 }
 
 .super-right {
-  padding: 60px 40px 30px 100px;
+  padding: 60px 30px 30px 100px;
 }
 
 .sub-footer {
@@ -26,4 +26,25 @@
 a {
   text-decoration: none;
   color: white;
+}
+
+p {
+  font-family: "Open Sans Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+}
+
+
+.copyright {
+  font-size: 10pt;
+}
+
+h5 {
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 600;
+  font-size: 16pt;
+}
+
+fa {
+  margin-right: 10px;
 }
