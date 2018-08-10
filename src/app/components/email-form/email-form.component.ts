@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmailFormComponent implements OnInit {
 
+  baseUrl = 'https://api.constantcontact.com/v2';
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
   submitted = false;
   valid = false;
@@ -20,6 +21,7 @@ export class EmailFormComponent implements OnInit {
   onSubmit() {
     if (this.email.match(this.emailPattern)) {
       this.submitted = true;
+
     } else {
       return;
     }

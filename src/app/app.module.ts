@@ -20,7 +20,7 @@ import { AboutComponent } from './components/home/about/about.component';
 import { TwitterFeedComponent } from './components/home/twitter-feed/twitter-feed.component';
 import { CarouselSectionComponent } from './components/home/carousel-section/carousel-section.component';
 import { JumboHeadingComponent } from './components/home/jumbo-heading/jumbo-heading.component';
-
+import { WhatWeOfferComponent } from './components/home/what-we-offer/what-we-offer.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -46,11 +46,12 @@ const appRoutes: Routes = [
     ContactUsComponent,
     PageNotFoundComponent,
     EmailFormComponent,
-    HomeComponent, 
-	AboutComponent,
-	TwitterFeedComponent,
-	CarouselSectionComponent,
-	JumboHeadingComponent
+    HomeComponent,
+    AboutComponent,
+    CarouselSectionComponent,
+    JumboHeadingComponent,
+    TwitterFeedComponent,
+    WhatWeOfferComponent
   ],
   imports: [
     RouterModule.forRoot(
