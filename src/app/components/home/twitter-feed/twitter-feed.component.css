@@ -1,0 +1,14 @@
+.container{
+	padding: 5% 10% 10% 10%;
+	font-family: 'Montserrat' !important;
+}
+
+.titleText{
+	border-left: 0.4vw solid #6ec16d;
+	color: #025ba7;
+	font-size: 20pt;
+}
+
+.txt{
+	padding-left: 1.5%;
+}

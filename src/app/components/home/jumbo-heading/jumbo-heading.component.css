@@ -1,0 +1,75 @@
+.jumbotron{
+	font-family: 'Montserrat';
+	background-image: url("../../../../assets/Group_1.jpg");
+  	background-size:cover;
+  	min-height: 500px;
+ 	height: 100%;
+	border-radius: 0;
+	padding: 10%;
+	position: relative;
+	margin-bottom: 12%;
+}
+
+.col{
+	color: white;
+}
+
+h1{
+	font-size: 3.5rem !important;
+}
+
+.heading{
+	border-left: 0.6vw solid white;
+}
+
+.content{
+	font-weight: 400 !important;
+}
+
+.btn{
+	background-color: #6ec16d;
+	color: white;
+	border-radius: 0;
+	width: 12vw;
+
+}
+
+.btn:hover{
+	border: 2px solid #6ec16d;
+	background-color: white;
+	color: #6ec16d;
+	box-shadow: 5px #e5e5e5;
+}
+.lead{
+	margin-left: 1.5%;
+}
+
+.getStarted{
+	position: absolute;
+	bottom: 0;
+	top:84%;
+	background: linear-gradient(to right, #6ec16d , #025ba7 );
+	z-index: 1;
+	height: 32%;
+	width: 80%;
+/*	box-shadow: 12px #e5e5e5;*/
+
+}
+
+.contentBox{
+	margin: 4%;
+	color: white;
+}
+
+.buttonReq{
+	margin: 7%;
+}
+
+.reqServices{
+	position: absolute;
+	z-index: 2;
+	float: right;
+	background-color: white;
+	color: #025ba7;
+	font-weight: bold;
+}
