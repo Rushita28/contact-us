@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -14,6 +16,11 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/home/about/about.component';
+import { TwitterFeedComponent } from './components/home/twitter-feed/twitter-feed.component';
+import { CarouselSectionComponent } from './components/home/carousel-section/carousel-section.component';
+import { JumboHeadingComponent } from './components/home/jumbo-heading/jumbo-heading.component';
+
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -39,7 +46,11 @@ const appRoutes: Routes = [
     ContactUsComponent,
     PageNotFoundComponent,
     EmailFormComponent,
-    HomeComponent
+    HomeComponent, 
+	AboutComponent,
+	TwitterFeedComponent,
+	CarouselSectionComponent,
+	JumboHeadingComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -48,7 +59,8 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     AngularFontAwesomeModule,
-    FormsModule
+    FormsModule,
+	NgxTwitterTimelineModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
