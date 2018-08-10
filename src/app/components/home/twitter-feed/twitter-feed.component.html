@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="twitter_feed">
+		<div class="twitter_block">
+			<div class = "latest-twitter" >
+				<h3 class="titleText"> <strong class="txt"> LATEST FROM <br> <span class="txt"> TWITTER</span></strong></h3>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-4">
+			<ngx-twitter-timeline 
+			[data]="{sourceType: 'url', url: 'https://twitter.com/masonsbdc'}"
+			[opts]="{tweetLimit: 1}"> </ngx-twitter-timeline>
+				</div>
+		</div>
+	
+	</div>
+</div>
