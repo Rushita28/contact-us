@@ -21,6 +21,8 @@ import { TwitterFeedComponent } from './components/home/twitter-feed/twitter-fee
 import { CarouselSectionComponent } from './components/home/carousel-section/carousel-section.component';
 import { JumboHeadingComponent } from './components/home/jumbo-heading/jumbo-heading.component';
 import { WhatWeOfferComponent } from './components/home/what-we-offer/what-we-offer.component';
+import {ConstantContactService} from './services/constant-contact.service';
+import {HttpClient, HttpClientModule, HttpHandler} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -56,14 +58,18 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
+      { enableTracing: false }
     ),
     BrowserModule,
     AngularFontAwesomeModule,
     FormsModule,
-	NgxTwitterTimelineModule.forRoot()
+	  NgxTwitterTimelineModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+    ConstantContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

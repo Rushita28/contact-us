@@ -117,7 +117,7 @@
   color: #323232 !important;
 }
 
-#registerButton {
+.registerButton {
   color: white;
   background-color: #6ec06c;
   text-align: center;
@@ -127,9 +127,18 @@
   display: inline-block;
 }
 
-#registerButton:hover{
+.registerButton:hover{
   border: 2px solid #6ec16d;
   background-color: white;
   color: #6ec16d;
   box-shadow: 5px #e5e5e5;
+}
+
+p {
+  font-family: Montserrat;
+  font-weight: normal;
+}
+
+.modalh2 {
+  color: #0259aa;
 }
