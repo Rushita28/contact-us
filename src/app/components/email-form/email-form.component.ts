@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ConstantContactService} from '../../services/constant-contact.service';
 
 @Component({
   selector: 'app-email-form',
@@ -7,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmailFormComponent implements OnInit {
 
-  baseUrl = 'https://api.constantcontact.com/v2';
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
   submitted = false;
-  valid = false;
   email = null;
 
-  constructor() { }
+  constructor(private ccService: ConstantContactService) { }
 
   ngOnInit() {
   }
@@ -21,7 +20,9 @@ export class EmailFormComponent implements OnInit {
   onSubmit() {
     if (this.email.match(this.emailPattern)) {
       this.submitted = true;
-
+      this.ccService.addContact(this.email).subscribe(data => {
+        console.log(data);
+      });
     } else {
       return;
     }

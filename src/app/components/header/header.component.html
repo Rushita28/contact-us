@@ -4,7 +4,8 @@
       <a href="/home"><img src="../../../assets/MasonSDBC logo.png" style="padding-left: 20px"></a>
     </div>
     <div class="col-auto topnav d-flex justify-content-center align-self-center" id="topNav">
-        <div class="dropdown">
+      <a routerLink="home">HOME</a>
+      <div class="dropdown">
           <button class="dropbtn">ABOUT US
             <fa name="caret-down"></fa>
           </button>
@@ -21,7 +22,32 @@
         <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">&#9776;</a>
     </div>
     <div class="col-2 login-box text-center align-self-center">
-      <button id="registerButton" type="button">REGISTER</button>
+      <button class="registerButton" type="button" data-toggle="modal" data-target="#registerModal">REGISTER</button>
+    </div>
+  </div>
+</div>
+
+<!--modal-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modalh2">Already registered with Mason SBDC</h2>
+        <br>
+        <p>If you have already registered with Mason SBDC in the past, there is no need to register with us again.
+          Please simply contact our Coordination team at  <a href="tel:+7032777747">(703) 277-7747</a> or <a
+            href="mailto:help@masonsbdc.org">help@masonsbdc.org</a>, and we will be happy to help.</p>
+        <br>
+        <h2 class="modalh2">New to Mason SBDC</h2>
+        <br>
+        <p>If you are new to Mason SBDC and would like to receive services from us, please register with us by clicking on the button below.
+          Once we receive your registration, we will contact you back within 2 business days.</p>
+        <br>
+        <button class="registerButton" type="button" data-dismiss="modal">REGISTER</button>
+      </div>
     </div>
   </div>
 </div>
