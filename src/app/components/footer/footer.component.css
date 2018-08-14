@@ -48,3 +48,26 @@ h5 {
 fa {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .super-footer {
+    border-bottom: none;
+  }
+
+  .super-right {
+    padding: 100px 5px 5px 5px;
+  }
+
+  .super-left {
+    border-right: none;
+  }
+
+  .background {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
